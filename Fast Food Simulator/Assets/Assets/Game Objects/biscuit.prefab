@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1246098977631256781}
   - component: {fileID: 150516265198588053}
-  - component: {fileID: 2402060911644073827}
   - component: {fileID: -1956551103505874608}
   m_Layer: 0
   m_Name: biscuit
@@ -82,19 +81,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2402060911644073827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5677100933373343036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a668f77f08ac4474d9d7660d2a2304c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  table: {fileID: 0}
 --- !u!61 &-1956551103505874608
 BoxCollider2D:
   m_ObjectHideFlags: 0
