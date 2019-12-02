@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 7737890465673000579}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9.726, y: 2.04, z: 0}
-  m_LocalScale: {x: 0.455169, y: 0.455169, z: 0.455169}
+  m_LocalScale: {x: 0.35, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -94,8 +94,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf1be2196abd14340a89ee577d301853, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 8928274146803403935, guid: ad780744527ff054487e28d056b1804f, type: 3}
-  slot: {fileID: 6566693429943613771, guid: 757a770c6965f134b84d17af1384fc36, type: 3}
+  Prefab: {fileID: 8602954425123890322, guid: eba8b333a37b1814db363c6841927364, type: 3}
+  toaster: {fileID: 0}
+  Ingredients: []
 --- !u!61 &5267491874002061479
 BoxCollider2D:
   m_ObjectHideFlags: 0

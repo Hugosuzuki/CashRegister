@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7103097916434607071}
   - component: {fileID: -489322911933535044}
   - component: {fileID: 7275660402065744464}
+  - component: {fileID: 8115454119549695992}
   m_Layer: 0
   m_Name: egg
   m_TagString: Ingredient
@@ -122,3 +123,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isBread: 0
   toasted: 0
+--- !u!50 &8115454119549695992
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8602954425123890322}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
