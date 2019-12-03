@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 150516265198588053}
   - component: {fileID: -1956551103505874608}
   - component: {fileID: -1844131403566014758}
+  - component: {fileID: -1255172403793152439}
   m_Layer: 0
   m_Name: biscuit
   m_TagString: Ingredient
@@ -122,3 +123,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isBread: 1
   toasted: 0
+--- !u!50 &-1255172403793152439
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5677100933373343036}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7

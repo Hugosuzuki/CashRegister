@@ -8,12 +8,11 @@ public class FoodIcon : MonoBehaviour
     [SerializeField]
     public Object Prefab;
 
-    GameObject[] Ingredients;
+    public List<GameObject> Ingredients;
 
     private Vector2 initPos;
     private Vector2 mousePos;
     private float dX, dY;
-    GameObject temp;
 
     // Start is called before the first frame update
     void Start()
@@ -40,9 +39,8 @@ public class FoodIcon : MonoBehaviour
     // Set position of object to proper location
     private void OnMouseUp()
     {
-        Instantiate(Prefab, new Vector3(mousePos.x, mousePos.y, 0.0f), Quaternion.identity);
         transform.position = initPos;
-        Ingredients[Ingredients.Length] = temp;
+        Ingredients.Add((GameObject)Instantiate(Prefab, new Vector3(mousePos.x, mousePos.y, 0), Quaternion.identity));
     }
 
     // Update is called once per frame
