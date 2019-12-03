@@ -40,7 +40,6 @@ public class FoodIcon : MonoBehaviour
     // Set position of object to proper location
     private void OnMouseUp()
     {
-        temp = GameObject.;
         Instantiate(Prefab, new Vector3(mousePos.x, mousePos.y, 0.0f), Quaternion.identity);
         transform.position = initPos;
         Ingredients[Ingredients.Length] = temp;
