@@ -1,19 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SandwichTimer : MonoBehaviour
 {
-    private float sandwichTime;
-    private float currentTime;
+    float currentTime;
 
-    int scoreValue;
+    static int scoreValue;
+
+    Text timeField;
 
     // Start is called before the first frame update
     void Start()
     {
-        sandwichTime = 42f;
         currentTime = 42f;
+
+        timeField = GetComponent<Text>();
+
+        timeField.font = (Font)Resources.GetBuiltinResource(typeof(Font), "Arial.ttf");
     }
 
     // Update is called once per frame
@@ -21,24 +26,28 @@ public class SandwichTimer : MonoBehaviour
     {
         currentTime -= Time.fixedDeltaTime;
 
-        if(currentTime >= 21f)
+        if(currentTime >= 21)
         {
             scoreValue = 200;
+            timeField.color = Color.green;
         }
-        else if(currentTime > 0f)
+        else if(currentTime >= 0)
         {
             scoreValue = 100;
+            timeField.color = Color.yellow;
         }
         else
         {
             scoreValue = 0;
+            timeField.color = Color.red;
         }
+
+        timeField.text = "Time: " + (int)(GameTimer.TIME);
     }
 
-    public void FinishedSandwich()
+    public static void FinishedSandwich(int mult = 1)
     {
-        //put an if here for if the sanwich is correct, so we can set it to just send through a negative instead of a positive time
-        Score.ChangeScore(scoreValue);
+        Score.ChangeScore(scoreValue * mult);
     }
 
     private void OnDestroy()

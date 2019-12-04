@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class GameTimer : MonoBehaviour
 {
-    private static float totalTime;
-    public static float timeLeft;
+    public static float TIME;
 
     // Start is called before the first frame update
     void Start()
@@ -16,11 +15,11 @@ public class GameTimer : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        timeLeft -= Time.fixedDeltaTime;
+        TIME += Time.fixedDeltaTime;
     }
 
-    public static void StartRound()
+    public static void NextSandwich()
     {
-        timeLeft = totalTime = 420f;
+        TIME = 0;
     }
 }

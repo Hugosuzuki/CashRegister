@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Garbage: MonoBehaviour
+public class AddScoreTest : MonoBehaviour
 {
-    GameObject[] Ingredients;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -14,19 +12,12 @@ public class Garbage: MonoBehaviour
 
     private void OnMouseUp()
     {
-        Ingredients = GameObject.FindGameObjectsWithTag("Ingredient");
-
-        for (var i = 0; i < Ingredients.Length; i++)
-        {
-            Score.ChangeScore(-10);
-            Destroy(Ingredients[i]);
-        }
-
+        Score.ChangeScore(50);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
